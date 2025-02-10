@@ -1,0 +1,63 @@
+/* pc */
+@media (min-width: 992px) {
+}
+
+/* tablet, mobile */
+@media (max-width: 991.98px) {
+  /* 1. an navbar */
+  .navbar {
+    display: none;
+  }
+  /* 2. chuyen logo vao giua */
+  .header-top {
+    position: relative;
+  }
+  .header__logo,
+  .header__shine {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  .header__shine {
+    left: 55%;
+  }
+  /*3. can lai vi tri menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 4%;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* 4. overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /*  */
+    opacity: 0;
+    visibility: 0;
+    transition: 0.5s;
+  }
+  /* 5.kiem tra menu-checkbox co duoc checked hay khong */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* tablet*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
+/* tam an noi dung k lien qa-uan */
+.hero,
+.footer,
+main {
+  display: none;
+}
